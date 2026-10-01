@@ -4,7 +4,7 @@ WORKDIR /water
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt && useradd -m devops 
+RUN pip install --no-cache-dir -r requirements.txt && adduser -D devops 
 
 COPY . .
 
